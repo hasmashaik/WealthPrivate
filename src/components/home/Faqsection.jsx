@@ -95,7 +95,7 @@ export default function FaqSection({
   title = "How can you make the most of Citigold Private Client value?",
   subtitle = "Get clear answers that help you understand how rewards, eligibility and global benefits can work around your Citigold Private Client relationship.",
   faqs = defaultFaqs,
-  defaultOpen = 0, // index of the item open on load; use null for all closed
+  defaultOpen = 0, 
 }) {
   const [openIndex, setOpenIndex] = useState(defaultOpen);
 

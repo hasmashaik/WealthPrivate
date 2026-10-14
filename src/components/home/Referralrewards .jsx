@@ -1,19 +1,18 @@
 //D:\xerago-task\xerago-task\src\components\home\Referralrewards .jsx
 
-// Import images from assets
 import citigoldPrivate from "../../assets/images/citigold-private.jpeg";
 import citigold from "../../assets/images/citygold.jpeg";
 
 const defaultCards = [
   {
-    image: citigoldPrivate,           // <-- Imported variable
+    image: citigoldPrivate,           
     alt: "Professional reviewing documents at a desk",
     title: "Citigold Private Client",
     balance: "HK$8,000,000 or above",
     rebate: "HK$12,800",
   },
   {
-    image: citigold,                  // <-- Imported variable
+    image: citigold,                  
     alt: "Colleagues meeting around a conference table",
     title: "Citigold",
     balance: "HK$1,500,000 or above",
@@ -134,7 +133,7 @@ export default function ReferralRewards({
           ))}
         </div>
 
-        {/* Notes */}
+        
         <div className="mt-10 space-y-3 text-[15px] leading-relaxed text-gray-500">
           <p>Please note:</p>
           {notes.map((note) => (

@@ -8,8 +8,8 @@ import {
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
-// Import the footer logo from assets
-import footerLogo from "../../assets/images/logo.jpeg"; // <-- change file name
+
+import footerLogo from "../../assets/images/logo.jpeg"; 
 
 const COLUMNS = [
   {
