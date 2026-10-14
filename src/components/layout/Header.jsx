@@ -1,6 +1,6 @@
 // src/components/layout/Header.jsx
 import { useState, useEffect } from "react";
-// Import the logo from assets (correct relative path)
+
 import logo from "../../assets/images/logo.jpeg"; 
 
 export default function Header() {
@@ -34,16 +34,14 @@ export default function Header() {
     >
       <div className="flex h-[80px] w-full items-center justify-between px-4 sm:px-6 lg:px-10">
         
-        {/* LEFT END: Logo + Wealth */}
+       
         <a href="/" className="flex items-center gap-2" aria-label="Wealth home">
           <img
-            src={logo}                    // <-- Use the imported variable
+            src={logo}                   
             alt="Logo"
             className="h-8 md:h-10 w-auto object-contain"
           />
-          <span className="text-[18px] font-normal tracking-wide text-black">
-            Wealth
-          </span>
+          
         </a>
 
         {/* RIGHT END: Citigold Text */}

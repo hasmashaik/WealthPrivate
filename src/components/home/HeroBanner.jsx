@@ -1,5 +1,4 @@
 // src/components/home/HeroBanner.jsx
-// Make sure the file name matches your actual file
 import homeBanner from "../../assets/images/HomeBanner.jpeg";
 
 export default function HeroBanner({

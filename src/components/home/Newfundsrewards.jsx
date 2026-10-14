@@ -1,3 +1,8 @@
+// src/components/home/Newfundsrewards.jsx
+
+// Import the background image from assets
+import rewardsBg from "../../assets/images/m1.png";
+
 const defaultFundTiers = [
   { range: "HK$40,000,000 or above", reward: "HK$160,000" },
   { range: "HK$30,000,000 - HK$39,999,999", reward: "HK$120,000" },
@@ -45,7 +50,7 @@ function RewardTable({ leftHeading, rightHeading, rows }) {
 }
 
 export default function NewFundsRewards({
-  image = "/images/rewards-bg.jpg",
+  image = rewardsBg, // <-- Use imported image
   title = "How new funds and wealth growth can add up",
   text = "Here's how much you can earn by bringing in new funds or by growing your net insurance or investment balance:",
   fundTiers = defaultFundTiers,
@@ -53,15 +58,19 @@ export default function NewFundsRewards({
 }) {
   return (
     <section className="relative w-full overflow-hidden bg-[#2f3538] text-white">
+     
       <img
         src={image}
         alt=""
         className="absolute inset-0 h-full w-full object-cover object-left"
       />
+
+      
       <div className="absolute inset-0 bg-[#2f3538]/80" />
 
+      {/* Content */}
       <div className="relative mx-auto grid max-w-[1440px] gap-10 px-4 py-10 sm:px-8 lg:grid-cols-[340px_1fr] lg:gap-32 lg:px-[114px] lg:py-11">
-        {/* Left column */}
+       
         <div>
           <svg
             className="mb-4 h-10 w-10"

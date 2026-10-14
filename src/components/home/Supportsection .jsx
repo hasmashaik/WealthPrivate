@@ -1,6 +1,5 @@
 // src/components/home/Supportsection .jsx
 
-// Import images from assets
 import wheelockHouse from "../../assets/images/Wheelock-House.jpeg";
 import salisburyRoad from "../../assets/images/SalisburyRoad.jpeg";
 
@@ -62,7 +61,7 @@ export default function SupportSection({
   title = "Speak to Citigold Private Client support",
   subtitle = "Connect with Citigold Private Client support whenever you need assistance. (852) 2860 8888",
   guidance = {
-    image: wheelockHouse,             // <-- Imported variable
+    image: wheelockHouse,             
     alt: "Two wealth specialists reviewing documents",
     title: "Private Wealth Management Guidance",
     text: "Meet dedicated wealth specialists in spaces designed for more focused conversations around your personal and business wealth needs.",
@@ -70,7 +69,7 @@ export default function SupportSection({
     branches: defaultBranches,
   },
   program = {
-    image: salisburyRoad,             // <-- Imported variable
+    image: salisburyRoad,             
     alt: "Young professional looking up in a modern building",
     title: "Citigold Private Client Young Successor Program",
     points: defaultProgramPoints,

@@ -1,3 +1,4 @@
+// src/components/home/RebateCalculator.jsx
 import { useMemo, useState } from "react";
 import {
   LuHandCoins,
@@ -13,14 +14,17 @@ import {
   EXTRA_OFFERS,
 } from "../../data/homeData";
 
+
+import buildingImage from "../../assets/images/building.png";
+
 const hk = (n) => `HK$${n.toLocaleString("en-US")}`;
 
-// Illustrative rules only - replace with your real ones
+
 const fundsRebate = (amount) =>
   amount >= FUNDS.min ? Math.floor(amount / 1_500_000) * 10_000 : 0;
 const investmentRebate = (amount) => Math.floor(amount / 500_000) * 2_000;
 
-/* ---------- Heading ---------- */
+
 function SectionHeading({ eyebrow, title, subtitle }) {
   return (
     <div className="text-center">
@@ -37,7 +41,7 @@ function SectionHeading({ eyebrow, title, subtitle }) {
   );
 }
 
-/* ---------- Stepper ---------- */
+
 function Stepper({ step }) {
   return (
     <div className="mx-auto flex max-w-[1000px] items-start justify-between px-2">
@@ -76,7 +80,7 @@ function Stepper({ step }) {
   );
 }
 
-/* ---------- Slider ---------- */
+
 function RangeSlider({ value, onChange, min, max, step }) {
   const pct = ((value - min) / (max - min)) * 100;
   return (
@@ -102,9 +106,9 @@ function RangeSlider({ value, onChange, min, max, step }) {
   );
 }
 
-/* ---------- Main ---------- */
+
 export default function RebateCalculator({
-  image = "/images/hk-skyline.jpg",
+  image = buildingImage, 
   eyebrow = "Welcome Offers",
   title = "Turn your Citigold Private Client start into rewards",
   subtitle = "Begin your Citigold Private Client relationship with welcome rewards of up to HK$260,000 Cash Rebate.",
@@ -184,6 +188,8 @@ export default function RebateCalculator({
                   {step === 3 && "Select any extra offers you qualify for"}
                 </p>
               </div>
+
+              
               <img
                 src={image}
                 alt=""

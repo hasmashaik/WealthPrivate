@@ -1,23 +1,22 @@
 //D:\xerago-task\xerago-task\src\components\home\Investmentoffers.jsx
 
-// Import the two images from assets
 import foreignExchange from "../../assets/images/foreign-exchange.jpeg";
 import stockServices from "../../assets/images/stock-services.jpeg";
 
 const defaultOffers = [
   {
-    image: foreignExchange,           // <-- Use the imported variable
+    image: foreignExchange,           
     alt: "Foreign exchange rates on a trading screen",
     title: "Foreign Exchange",
     text: "Enjoy 0% spread on successful FX transactions via the Citi Mobile® App or Citibank Online within the first 6 calendar months from account opening.",
-    href: "#",
+    
   },
   {
-    image: stockServices,             // <-- Use the imported variable
+    image: stockServices,             
     alt: "Presenter explaining charts on a display",
     title: "Stock Services",
     text: "Enjoy a 3-month brokerage buy fee waiver on Hong Kong and US stock transactions after opening a new securities account.",
-    href: "#",
+   
   },
 ];
 
@@ -47,7 +46,7 @@ export default function InvestmentOffers({
   return (
     <section className="w-full bg-[#d6d6d6] px-6 py-12 text-black sm:py-14">
       <div className="mx-auto max-w-[1200px]">
-        {/* Heading */}
+        
         <div className="text-center">
           <p className="text-xs font-medium uppercase tracking-[0.2em]">
             {eyebrow}
@@ -60,7 +59,7 @@ export default function InvestmentOffers({
           </p>
         </div>
 
-        {/* Offer cards with centre divider */}
+        
         <div className="mt-10 grid gap-12 md:grid-cols-2 md:gap-0">
           {offers.map((offer, i) => (
             <article
@@ -91,7 +90,7 @@ export default function InvestmentOffers({
           ))}
         </div>
 
-        {/* CTA */}
+       
         <div className="mt-12 text-center">
           <a
             href={ctaHref}
